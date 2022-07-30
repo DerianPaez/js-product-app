@@ -53,11 +53,11 @@ function createItem(productName, productPrice, productYear) {
 }
 
 function createMessage(text, color) {
-  div = document.createElement('div')
+  let div = document.createElement('div')
   div.setAttribute('class', 'message__container')
   div.style.backgroundColor = color
   
-  p = document.createElement('p')
+  let p = document.createElement('p')
   p.setAttribute('class', 'message__text')
   p.textContent = text
 
@@ -71,5 +71,4 @@ function messageTimeout(message) {
     message.remove()
   }, 2000)
 }
-
 
